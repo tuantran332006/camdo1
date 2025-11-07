@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/nhapthongtin.css">
+</head>
+<body>
+    <div class="thongbao" style="width:300px height=500px">
+        <div class="m">
+         <h3>Đã lưu thông tin khách hàng thành công</h3>
+         </div>
+         <div class="select">
+            <button onclick=khachhang()>Rời đi</button>
+            <button onclick=nhapthem()>Nhập thêm</button>
+         </div>
+    </div>
+     <form id="input" class="reveal-section">
+        <div class="k">
+            <span>Nhap Thong Tin</span>
+        </div>
+        <div class="in">   
+            <label for="name">Họ và Tên</label>
+            <input type="text" id="name" placeholder=" " pattern="[w-.]{6,}"> 
+            <br>   
+        </div>
+        <div class="in">
+            <label for="money">Số tiền cần vay</label>  
+            <input type="number" id="money" min="1000000" max="100000000"  placeholder=" ">
+            <br>
+        </div>
+        <div class="in">
+            <label for="phonenumber">Số điện thoại</label>
+             <input type="tel" id="phonenumber" pattern="[0][0-9]{9,10}" placeholder=" ">
+        </div>
+        <div class="in">
+            <label for="goivay">Gói vay</label><br>
+            <select name="goivay" id="goivay">
+                <option value="null"></option>
+                <option value="short">ngắn hạn</option>
+                <option value="long">dài hạn</option>
+            </select>
+        </div>
+        <div class="in">
+            <label for="taisan">Tài sản cầm cố</label><br>
+            <select name="taisan" id="taisan">
+                <option value="NULL"></option>
+                <option value="xemay">Xe Máy</option>
+                <option value="maytinh">Máy Tính</option>
+                <option value="tivi">Ti Vi</option>
+                <option value="oto">Xe Hơi</option>
+                <option value="dienthoai">Iphone</option>
+            </select>
+        </div>
+        <div class="loi">
+            <p>Hãy nhập đầy đủ thông tin và không sai</p>
+           </div> 
+        <div>
+        <button  type="submit">enter</button>
+        </div>
+    </form>
+    <script src="../js/nhapthongtin.js"></script>
+</body>
+</html>

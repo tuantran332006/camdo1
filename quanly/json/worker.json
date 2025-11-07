@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "ten": "Nguyen Van A",
+    "tuoi": 28,
+    "chuc": "trự ca",
+    "diemdanh": true,
+    "luongtheoh": 45000
+  },
+  {
+    "id": 2,
+    "ten": "Tran Thi B",
+    "tuoi": 25,
+    "chuc": "Ke toan",
+    "diemdanh": false,
+    "luongtheoh": 40000
+  },
+  {
+    "id": 3,
+    "ten": "Le Van C",
+    "tuoi": 30,
+    "chuc": "bán hàng",
+    "diemdanh": true,
+    "luongtheoh": 55000
+  },
+  {
+    "id": 4,
+    "ten": "Pham Thi D",
+    "tuoi": 26,
+    "chuc": "sale",
+    "diemdanh": true,
+    "luongtheoh": 48000
+  },
+  {
+    "id": 5,
+    "ten": "Hoang Van E",
+    "tuoi": 35,
+    "chuc": "bảo vệ",
+    "diemdanh": false,
+    "luongtheoh": 65000
+  }
+]

@@ -1,0 +1,156 @@
+body{
+    margin:0;
+    padding: 0;
+    width:100%;
+    height: 100vh;;
+    background-image: url(../image/nhapthongtin1.jpg);
+    background-position: center;
+    background-size: cover;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    position: absolute;
+    top:0;
+    left:50%;
+}
+h3{
+    color:#003f73;
+    text-shadow:1px 1px #07070785;
+}
+#input{
+    
+    position:relative;
+    display:grid;
+     width:400px;
+    height: 400px;
+    opacity: 1;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+    padding:7.5em 2.5em 4em 2.5em;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.11);
+    background-size: cover;
+    justify-content: center;
+    box-shadow: 0 0 8px 8px rgba(54, 208, 255, 0.345);
+    transition: 1s;
+}
+.k{
+    position:absolute;
+    top:-10px;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(50, 211, 252, 0.564);
+    width:30%;
+    height: 60px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0 3px 3px rgba(0, 213, 255, 0.282);
+    color:aliceblue
+}
+#input div{
+    margin-top:10px;
+}
+#input input{
+    width:100%;
+    height:25px;
+    border-radius:10px;
+    background-color: rgba(255, 255, 255, 0.523);
+    box-shadow: 0 0 4px 4px rgba(74, 207, 255, 0.877);
+    border: 2px solid #51f1ff
+}
+#input select{
+    width:103%;
+    border-radius:10px;
+        background-color: rgba(255, 255, 255, 0.523);
+    box-shadow: 0 0 4px 4px rgba(74, 207, 255, 0.877);
+    height:30px;
+}
+div:last-child{
+    margin:30px;
+    display: flex;
+    justify-content: center;
+}
+button{
+    width:120px;
+    height: 30px;
+    background-color: rgba(104, 232, 255, 0.316);
+    border-color: rgba(255, 255, 255, 0.649);
+    border-radius: 20px;
+    box-shadow: 0 0 4px 4px rgba(151, 245, 255, 0.877);
+}
+select option{
+    background-color: rgba(255, 255, 255, 0.275);
+    border-radius: 12px;
+}
+.loi{
+    color:rgba(186, 40, 40, 0.778);
+    transition: 0.7s;
+    display:none;
+}
+.thongbao{
+    background-color:rgba(255, 255, 255, 0.514) ;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(5px);
+    padding:7.5em 2.5em 4em 2.5em;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.11);
+    background-size: cover;
+    display:grid;
+    transition: 1s;
+    justify-content: center;
+    opacity: 0;
+    z-index: 3;
+    box-shadow: 0 0 8px 8px rgba(32, 236, 255, 0.221);
+}
+.m{
+    padding :20px;
+    background-color:rgba(66, 235, 244, 0.353);
+    border-radius:16px;
+    box-shadow: 0 0 4px 4px rgba(81, 213, 246, 0.877);
+}
+
+.select{
+    display:flex;
+    gap:20px;
+}
+#input input:focus{
+    background-color: #ffffff00;
+    outline:none;
+    border: 2px solid #5ad5f7;
+}
+select:focus{
+    outline:none;
+    border: #003f73;
+}
+.reveal-section{
+  opacity:0;
+  transform: translateY(50px);
+  transition: 1s ease;
+}
+.reveal-section.show{
+  opacity:1;
+  transform: translateY(0);
+}
+@keyframes rung{
+    0%{transform:   rotate(0deg);}
+    10%{transform: rotate(2deg);}
+    20%{transform: rotate(-2deg);}
+    30%{transform: rotate(2deg);}
+    40%{transform: rotate(-2deg);}
+    50%{transform: rotate(2deg);}
+    60%{transform: rotate(-2deg);}
+    70%{transform:rotate(2deg);}
+    80%{transform: rotate(2deg);}
+    90%{transform: rotate(-2deg);}
+    100%{transform: rotate(0deg);}
+}
+@keyframes to {
+    50% {transform: scale(1.2);}
+}

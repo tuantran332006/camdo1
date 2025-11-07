@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/quanly.css">
+    <link rel="stylesheet" href="../quanly/js/quanly.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+    <title>Document</title>
+</head>
+<body>
+  <!-- Form chỉnh sửa khách hàng -->
+<!-- Form chỉnh sửa khách hàng -->
+ <div id="addForm" style="display:none; padding:15px; background:#f7f7f7; border-radius:12px; margin-top:10px;">
+  <div class="chua">
+  <h3>Thêm khách hàng mới</h3>
+  <label>Họ tên:</label><br>
+  <input type="text" id="add_hoten" placeholder="Nhập họ tên"><br><br>
+
+  <label>SĐT:</label><br>
+  <input type="text" id="add_sdt" placeholder="Nhập số điện thoại"><br><br>
+
+  <label>Sản phẩm:</label><br>
+  <input type="text" id="add_sanpham" placeholder="Nhập sản phẩm"><br><br>
+
+  <label>Danh mục:</label><br>
+  <input type="text" id="add_danhmuc" placeholder="Nhập danh mục"><br><br>
+
+  <label>Giá (₫):</label><br>
+  <input type="number" id="add_gia" placeholder="Nhập giá"><br><br>
+
+  <label>Ngày nhận:</label><br>
+  <input type="date" id="add_ngaynhan"><br><br>
+
+  <label>Ngày thanh toán:</label><br>
+  <input type="date" id="add_ngaythanhtoan"><br><br>
+
+  <label>Lãi suất (%):</label><br>
+  <input type="number" id="add_laixuat" step="0.1" placeholder="Nhập lãi suất"><br><br>
+  <div class="click"></div>
+  <button onclick="addCustomer()"> Lưu</button>
+  <button onclick="hideAddForm()"> Hủy</button>
+  </div>
+
+</div>
+<div class="menu xnxx">
+            <ul>
+              <li><button onclick="dongluachon()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M256-227.69 227.69-256l224-224-224-224L256-732.31l224 224 224-224L732.31-704l-224 224 224 224L704-227.69l-224-224-224 224Z"/></svg></button></li>
+                <li>
+                   <button id="myBtn" style="width: 100%; height: 100%; border: 0;border-radius:12px ;" onclick="loadWorker()">nhân viên</button>
+                </li>
+                <li>
+                    <button id="myBtn" style="width: 100%; height: 100%; border: 0;border-radius:12px ;" onclick="loadCustomers()">khách hàng</button>
+                </li>
+                <li>
+                        <button id="myBtn" style="width: 100%; height: 100%; border: 0;border-radius:12px ;" onclick="loadDoanhthu()">doan thu</button>
+                </li>
+            </ul>
+        </div>
+<div id="editForm" class="edit-form" style="display:none;">
+  <div class="form-content">
+    <h3>Chỉnh sửa thông tin khách hàng</h3>
+
+    <label>ID:</label>
+    <input type="text" id="edit-id" readonly><br>
+
+    <label>Họ tên:</label>
+    <input type="text" id="edit-hoten"><br>
+
+    <label>Số điện thoại:</label>
+    <input type="text" id="edit-sdt"><br>
+
+    <label>Sản phẩm:</label>
+    <input type="text" id="edit-sanpham"><br>
+
+    <label>Danh mục:</label>
+    <input type="text" id="edit-danhmuc"><br>
+
+    <label>Giá (VNĐ):</label>
+    <input type="number" id="edit-gia"><br>
+
+    <label>Ngày nhận:</label>
+    <input type="date" id="edit-ngaynhan"><br>
+
+    <label>Ngày thanh toán:</label>
+    <input type="date" id="edit-ngaythanhtoan"><br>
+
+    <label>Lãi suất (%):</label>
+    <input type="number" id="edit-laixuat" step="0.1"><br>
+
+    <label>Tổng giá trị (VNĐ):</label>
+    <input type="number" id="edit-tonggiatri" readonly><br>
+
+    <div class="form-buttons">
+      <button onclick="saveEdit()"> Lưu</button>
+      <button onclick="closeEditForm()"> Hủy</button>
+    </div>
+  </div>
+</div>
+
+
+     <header>
+       <ul>
+        <li><button onclick=active()>fun</button></li>
+        <li><a href="../../index.html">web</a></li>
+        <li class="setting">settings</li>
+         <li style="padding: 0; width: 30px; height: 30px;"><button class="mmmmo" style=" width: 100%; height: 100%; border-radius: 2px;" onclick="moluachon()"><i  class="fa-solid fa-bars"></i></button></li> 
+       </ul>
+     </header>
+    <div class="container">
+        <div class="tuongtac">
+          <div class="chucnang">
+          </div>
+          <div class="table-container">
+    <table>
+      <thead>
+        
+      </thead>
+        <tbody>
+        
+      </tbody>
+    </table>
+</div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                   <button id="myBtn" style="width: 100%; height: 100%; border: 0;border-radius:12px ;" onclick="loadWorker()">nhân viên</button>
+                </li>
+                <li>
+                    <button id="myBtn" style="width: 100%; height: 100%; border: 0;border-radius:12px ;" onclick="loadCustomers()">khách hàng</button>
+                </li>
+                <li>
+                        <button id="myBtn" style="width: 100%; height: 100%; border: 0;border-radius:12px ;" onclick="loadDoanhthu()">doan thu</button>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+<script src="../js/quanly.js"></script>
+</body>
+</html>

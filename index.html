@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="trangchu.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+</head>
+<body>
+   <nav     class="index ">
+        <div class="container ">
+        <button onclick=menu() class="exit"></button>
+        <ul class="be x">
+        <li  onclick=menu()><a ><i class="fa-solid fa-x"></i></a></li>
+        <li><a href="index.html">Trang chu</a></li>
+        <li><a href="khachhang/html/khachhang.html">Khach Hang</a></li>
+        <li><a href="quanly/html/Login..html">Quan ly</a></li>
+        <li  onclick=light()><p class="k" ><i class="fa-solid fa-moon"></i></p></li>
+        
+    </ul >
+    </div>
+         <ul class="lon x">
+        <li  onclick=light()><p class="k" ><i class="fa-solid fa-moon"></i></p></li>
+        <li class="mannho"><a href="index.html">Trang chu</a></li>
+        <li class="mannho"><a href="khachhang/html/khachhang.html">Khach Hang</a></li>
+        <li class="mannho"><a href="quanly/html/Login..html">Quan ly</a></li>
+        <li onclick=showmenu();><i class="fa-solid fa-bars"></i></li>
+    </ul>
+ </nav>
+ 
+    <section class="noidung" style="text-align: center; margin-top: 100px;">
+        <h1>Cung cấp giải pháp Cầm Đồ Chính Trực</h1>
+        <p>Đồng hành cùng bạn vượt qua thử thách bằng sự</p>
+        <h2>Tử tế – Chân thành – Đáng tin cậy</h2>
+        <br>
+        <br>
+        <br>
+        <h2>Tài sản được bảo quản vẹn nguyên</h2>
+        <p>Đền 200% giá trị nếu tài sản bị mất</p>
+    </section>
+    <div class="goiy">
+    <div class="gioithieu1 reveal-section x">
+        <div class="tieudegoiy">
+        <div class="tieudde"><h3>Giải ngân nhanh</h3></div>  <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red" ><path d="M718-341.46 632.46-426 661-454.31l57 56.77 141-141L887.54-511 718-341.46ZM440-501Zm0 327.15-46.23-41.69Q302.54-299 241.81-359.23q-60.73-60.23-96.54-107.15-35.81-46.93-50.54-85.85Q80-591.15 80-631q0-76.31 51.85-128.04 51.84-51.73 128.15-51.73 52.77 0 99 27t81 78.54q34.77-51.54 81-78.54 46.23-27 99-27 69.46 0 117.92 43.19 48.46 43.2 59.23 107.58H756q-9.54-49.23-47.62-80-38.07-30.77-88.38-30.77-48.69 0-88.38 27.5-39.7 27.5-75.54 83.27h-32.16q-36.38-56.54-76.27-83.65-39.88-27.12-87.65-27.12-58.54 0-99.27 39.89Q120-691 120-631q0 33.77 14 68.54t50 80.04q36 45.27 98 106.3Q344-315.08 440-228q30.62-27.62 60.23-54.54 29.62-26.92 52.92-49.23l4.39 4.39 9.88 9.88q5.5 5.5 9.89 9.88l4.38 4.39q-23.54 22.31-52.54 48.35-29 26.03-58.84 53.65L440-173.85Z"/></svg></div>
+        </div>
+    <div class="thongtingioithieu"><p>Chúng tôi luôn có chính sách giải ngân tiền trước rồi thẩm định tài sản sau, nên đảm bảo sau khi gặp mặt là 10 phút sau quý khách đã có tiền trong tài khoản. Xin hãy thử 1 lần để cảm nhận.</p></div>
+    </div>
+    <div class="gioithieu1 reveal-section x">
+        <div class="tieudegoiy">
+        <div  class="tieudde"><h3>Minh bạch lãi xuất</h3></div>
+         <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" ><path d="M718-341.46 632.46-426 661-454.31l57 56.77 141-141L887.54-511 718-341.46ZM440-501Zm0 327.15-46.23-41.69Q302.54-299 241.81-359.23q-60.73-60.23-96.54-107.15-35.81-46.93-50.54-85.85Q80-591.15 80-631q0-76.31 51.85-128.04 51.84-51.73 128.15-51.73 52.77 0 99 27t81 78.54q34.77-51.54 81-78.54 46.23-27 99-27 69.46 0 117.92 43.19 48.46 43.2 59.23 107.58H756q-9.54-49.23-47.62-80-38.07-30.77-88.38-30.77-48.69 0-88.38 27.5-39.7 27.5-75.54 83.27h-32.16q-36.38-56.54-76.27-83.65-39.88-27.12-87.65-27.12-58.54 0-99.27 39.89Q120-691 120-631q0 33.77 14 68.54t50 80.04q36 45.27 98 106.3Q344-315.08 440-228q30.62-27.62 60.23-54.54 29.62-26.92 52.92-49.23l4.39 4.39 9.88 9.88q5.5 5.5 9.89 9.88l4.38 4.39q-23.54 22.31-52.54 48.35-29 26.03-58.84 53.65L440-173.85Z"/></svg></div>
+        </div>
+    <div class="thongtingioithieu"><p>Quyền lợi khách hàng luôn được đặt lên hàng đầu với sự minh bạch tuyệt đối về quy trình và lãi suất. Tài sản được niêm phong tuyệt đối đảm bảo quý khách sẽ hài lòng và quay lại lần sau.</p></div>
+    </div>
+   <div class="gioithieu1 reveal-section x">
+    <div class="tieudegoiy">
+        <div  class="tieudde"><h3>Công nghệ hàng đầu</h3></div>
+         <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M718-341.46 632.46-426 661-454.31l57 56.77 141-141L887.54-511 718-341.46ZM440-501Zm0 327.15-46.23-41.69Q302.54-299 241.81-359.23q-60.73-60.23-96.54-107.15-35.81-46.93-50.54-85.85Q80-591.15 80-631q0-76.31 51.85-128.04 51.84-51.73 128.15-51.73 52.77 0 99 27t81 78.54q34.77-51.54 81-78.54 46.23-27 99-27 69.46 0 117.92 43.19 48.46 43.2 59.23 107.58H756q-9.54-49.23-47.62-80-38.07-30.77-88.38-30.77-48.69 0-88.38 27.5-39.7 27.5-75.54 83.27h-32.16q-36.38-56.54-76.27-83.65-39.88-27.12-87.65-27.12-58.54 0-99.27 39.89Q120-691 120-631q0 33.77 14 68.54t50 80.04q36 45.27 98 106.3Q344-315.08 440-228q30.62-27.62 60.23-54.54 29.62-26.92 52.92-49.23l4.39 4.39 9.88 9.88q5.5 5.5 9.89 9.88l4.38 4.39q-23.54 22.31-52.54 48.35-29 26.03-58.84 53.65L440-173.85Z"/></svg></div>
+         </div>
+    <div class="thongtingioithieu"><p>Chúng tôi áp dụng công nghệ chuyển đổi số của ngân hàng nhà nước đảm bảo an toàn giao dịch, chỉ với vài cái click chuột là các bạn có thể cầm cố tài sản, toàn bộ hệ thống được quản lý theo hình thức đám mây nên ở đâu bạn cũng cầm được.</p></div>
+   </div>
+   <div class="gioithieu1 reveal-section x">
+    <div class="tieudegoiy">
+        <div  class="tieudde"><h3>Bảo hiểm bảo mật</h3></div>
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M718-341.46 632.46-426 661-454.31l57 56.77 141-141L887.54-511 718-341.46ZM440-501Zm0 327.15-46.23-41.69Q302.54-299 241.81-359.23q-60.73-60.23-96.54-107.15-35.81-46.93-50.54-85.85Q80-591.15 80-631q0-76.31 51.85-128.04 51.84-51.73 128.15-51.73 52.77 0 99 27t81 78.54q34.77-51.54 81-78.54 46.23-27 99-27 69.46 0 117.92 43.19 48.46 43.2 59.23 107.58H756q-9.54-49.23-47.62-80-38.07-30.77-88.38-30.77-48.69 0-88.38 27.5-39.7 27.5-75.54 83.27h-32.16q-36.38-56.54-76.27-83.65-39.88-27.12-87.65-27.12-58.54 0-99.27 39.89Q120-691 120-631q0 33.77 14 68.54t50 80.04q36 45.27 98 106.3Q344-315.08 440-228q30.62-27.62 60.23-54.54 29.62-26.92 52.92-49.23l4.39 4.39 9.88 9.88q5.5 5.5 9.89 9.88l4.38 4.39q-23.54 22.31-52.54 48.35-29 26.03-58.84 53.65L440-173.85Z"/></svg></div>
+        </div>
+    <div class="thongtingioithieu"><p>Dịch vụ cầm đồ của chúng tôi được bảo hiểm bảo lãnh vì vậy không cần phải lo lắng về tài sản của Quý khách. Cam kết sẽ đền bù 200% giá trị tài sản khi có rủi ro. Chúng tôi cũng luôn bảo mật thông tin khách hàng.</p></div>
+   </div>
+   </div>
+        <div class="card x">
+  <img class="kkkk reveal-section" src="image/anh5.jpg" alt="">
+  <div class="info">
+    <h3>Cầm đồ máy ảnh – máy quay</h3>
+    <p>Định giá cao – thủ tục nhanh gọn</p>
+  </div>
+</div>
+    <section class="luachon x">
+       <a class="reveal-section" href="../khachhang/html/khachhang.html">
+        <img src="image/iphone.jpg" alt="">
+        <p>Cầm điện thoại</p>
+       </a>
+       <a class="reveal-section" href="../khachhang/html/khachhang.html">
+        <img src="image/applewatch.png" alt="">
+        <p>Cầm đồng hồ</p>
+       </a>
+       <a class="reveal-section"  href="../khachhang/html/khachhang.html">
+        <img src="image/sh.png" alt="">
+        <p>Cầm xe máy</p>
+       </a>
+       <a class="reveal-section"  href="../khachhang/html/khachhang.html">
+          <img src="image/lambo.png" alt="">
+        <p>Cầm ô tô</p>
+       </a>
+       <a class="reveal-section"  href="../khachhang/html/khachhang.html">
+         <img src="image/pc.jpg" alt="">
+        <p>Cầm pc</p>
+       </a>
+       <a class="reveal-section"  href="../khachhang/html/khachhang.html">
+        <img src="image/macbook.png" alt="">
+        <p>Cầm laptop</p>
+       </a>
+    </section>
+    <div class="khachhang reveal-section">
+    <a  href="../khachhang/html/khachhang.html">Định giá tài sản miễn phí</a>
+    </div>
+
+    <h3>Thủ tục nhanh chóng</h3>
+      <p style="text-align: center;">Điều khoản Hợp đồng rõ ràng, Chi phí vay minh bạch, Hoàn tiền dư nếu thanh lý</p>
+    <article class="cacbuoc">
+    
+    
+    <div class="cacbuocall  ">
+        <div class="buoc reveal-section x">
+            <img src="image/buoc1.png" alt="">
+            <h4>Bước 1</h4>
+            <p><a href="../khachhang/html/khachhang.html">Gửi yêu cầu tư vấn</a> và nhận hỗ trợ qua Online từ đội ngũ chuyên gia.</p>
+        </div>
+        <div class="buoc reveal-section x">
+            <img src="image/buoc2.png" alt="">
+            <h4>Bước 2</h4>
+            <p>Cầm tài sản <a href="../khachhang/html/khachhang.html">đến cửa hàng gần nhất</a> để ký hợp đồng và nhận giải ngân.</p>
+        </div>
+        <div class="buoc reveal-section x">
+            <img src="image/buoc3.png" alt="">
+            <h4>Bước 3</h4>
+            <p>Đóng lãi hàng tháng hoặc hoàn trả khoản vay và nhận lại tài sản.</p>
+        </div>
+    </div>
+    </article>
+    <div class="khachhang reveal-section">
+    <a  href="../khachhang/html/khachhang.html">Gửi yêu cầu</a>
+    </div>
+    <footer class="x">
+        <div class="footerall">
+        <ul class="dichvu">
+            <li><h3>Cầm đồ</h3></li>
+            <li><a href="../khachhang/html/khachhang.html">Cầm điện thoại</a></li>
+            <li><a href="../khachhang/html/khachhang.html">Cầm laptop</a></li>
+            <li><a href="../khachhang/html/khachhang.html">Cầm PC</a></li>
+            <li><a href="../khachhang/html/khachhang.html">Cầm ô tô</a></li>
+            <li><a href="../khachhang/html/khachhang.html">Cầm xe máy</a></li>
+        </ul>
+        <ul class="diachi">
+            <li><h4>UTC cầm đồ</h4></li>
+            <li><i class="fa-solid fa-location-dot"></i>Số 3 phố Cầu Giấy, P.Láng Thượng, Q.Đống Đa, Tp.Hà Nội.</li>
+            <li><i class="fa-solid fa-phone"></i>0986158939</li>
+            
+        </ul>
+                <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36540.09305684375!2d105.76729933145339!3d21.05125697878768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab424a50fff9%3A0xbe3a7f3670c0a45f!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBHaWFvIFRow7RuZyBW4bqtbiBU4bqjaQ!5e0!3m2!1svi!2s!4v1759721510151!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+    </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
